@@ -1,4 +1,4 @@
-@import 'config';
+@import 'base';
 
 .container {
   padding: 3.125rem;
@@ -26,7 +26,7 @@
   position: relative;
   width: 12.5rem;
   height: 12.5rem;
-  background: #ff7979;
+  background: #4f60ac;
   border-radius: 50%;
   transition: transform 0.5s linear;
   &-container {
@@ -79,7 +79,6 @@ nav {
           transform: translateX(-200%);
         }
       }
-
       a {
         color: #fff;
         text-decoration: none;

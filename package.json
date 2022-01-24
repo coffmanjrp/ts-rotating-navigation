@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc -w"
+    "tsc": "tsc -w",
+    "scss": "node-sass -w ./src/scss/style.scss -o ./dist/css/",
+    "start": "concurrently \"npm run tsc\" \"npm run scss\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^14.14.10",
-    "typescript": "^4.1.2"
+    "@types/node": "^17.0.10",
+    "concurrently": "^7.0.0",
+    "node-sass": "^7.0.1",
+    "typescript": "^4.5.5"
   }
 }
